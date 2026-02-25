@@ -90,11 +90,11 @@ def format_rank_display(ranks: List[int], rank_threshold: int, format_type: str)
 
     # 根据平台类型选择高亮格式
     if format_type == "html":
-        highlight_start = "<font color='red'><strong>"
-        highlight_end = "</strong></font>"
+        highlight_start = "**"
+        highlight_end = "**"
     elif format_type == "feishu":
-        highlight_start = "<font color='red'>**"
-        highlight_end = "**</font>"
+        highlight_start = "**"
+        highlight_end = "**"
     elif format_type == "dingtalk":
         highlight_start = "**"
         highlight_end = "**"
